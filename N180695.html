@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <link rel="stylesheet" href="N180695.css">
+        <style type="text/css">
+        </style>
+    </head>
+    <body>
+        <header>
+            <h3>f1h20<sub>rgukt</sub></h3>
+        </header>
+        <main>
+            <form action="success.html" onsubmit="return validate()">
+                <section><p>1.basic details</p>
+                    <section>
+                        <p><label for="user">username :</label> </p>
+                        <input required onkeyup="check(this,/^[F]([A-Z,a-z]){3,8}$/gi)"type="text" id="user"name="user">
+                    </section>
+                    <section>
+                        <p><label for="mail">mail :</label></p>
+                        <input required id="mail" type="text" onkeyup="check(this,/^[A-Z,a-z][A-Z,a-z,0-9]+@[A-Z,a-z]{3,6}(\.[A-Z,a-z]{2,5})*\.[A-Z,a-z]{2,6}$/gi)"name="mail">
+                    </section>
+                    <section>
+                        <p><label for="mobile">mobile :</label></p>
+                        <input required type="text" onkeyup="check(this,/(^977\d{7}$)|(^\d{4}-\d{4}-\d{4}$)/)"id="mobile" name="mobile">
+                    </section>
+                    <section>
+                        <p><label for="country">country :</label></p>
+                        <select name="country" onclick="fore(this)" id="country">
+                            <option value="none" ></option>
+                            <option value="india">india</option>
+                            <option value="england">england</option>
+                            <option value="germany">germany</option>
+                            <option value="america">america</option>
+                        </select>
+                        <section id="app">
+                        <input type="checkbox" value="beer" id="beer"><label for="beer">do you want beer?</label>
+                        </section>
+                    </section>
+                </section>
+                <section>
+                    <p>2.payment info</p>
+                    <section>
+                        <p><label for="dd">DD</label></p>
+                        <input type="text" onkeyup="check(this,/^SBIN(\d){7}$/gi)" id="dd" name="dd">
+                        <p>or</p>
+                        <p> <label for="account">account no</label></p>
+
+                        <input type="text" id="account" onkeyup="check(this,/^\d{11}$/)" name="account">
+                    </section>
+                </section>
+                <section>
+                    <p>3.accomodation details</p>
+                    <section>
+                        <p><label for="accom">type of accomodation</label><p>
+                       <input type="radio" name="accom"id="accom1" value="nuzvid"><label for="accom1" >nuzvid</label>
+                       <input type="radio" name="accom"id="accom2" value="isklm"><label for="accom2" >isklm</label>
+                       <input type="radio" name="accom"id="accom3" value="ongole"><label for="accom3" >ongole</label>
+                       <input type="radio" name="accom"id="accom4" value="kadapa"><label for="accom4" >kadapa</label>
+                    </section>
+                    <section>
+                        <p><label for="services">services</label></p>
+                       <input type="checkbox" name="services" id="serv1"><label for="serv1">breakfast</label>
+                       <input type="checkbox" name="services" id="serv2"><label for="serv2">lunch</label>
+                       <input type="checkbox" name="services" id="serv3"><label for="serv3">snacks</label>
+                       <input type="checkbox" name="services" id="serv4"><label for="serv4">tea</label>
+                       <input type="checkbox" name="services" id="serv5"><label for="serv5">coffe</label>
+                       <input type="checkbox" name="services" id="serv5"><label for="serv5">eggs</label>
+
+
+                    </section>
+                    <section>
+                       <p> <label for="stay" >no of days staying</label></p>
+                        <input required type="number"onkeyup="cal(this)" name="days"id="stay" >
+                       <p> <label for="cost" >total cost</label></p>
+                        <input required type="number" disabled name="cost"id="cost">
+
+                    </section>
+
+                </section>
+                <section id="last">
+                    <input name="reset"type="reset" value="reset">
+                    <input required type="submit"value="submit">
+
+                </section>
+               
+         </form>
+    </main>
+    </body>
+    <script rel="text/javascript"src="N180695.js"></script>
+</html>

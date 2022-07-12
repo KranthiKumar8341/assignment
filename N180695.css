@@ -1,0 +1,100 @@
+header{
+    background-color: rgb(252, 231, 41);
+    width:100%;
+    text-align: center;
+    color:white;
+    text-transform: uppercase;
+    padding:15px;
+    margin:0;
+    
+}
+header h3{
+    display: inline-block;
+    padding:15px;
+    border-radius: 10px;
+    border:2px solid black;
+    text-transform: uppercase;
+    background-color:rgb(5, 65, 114);
+    
+}
+header h3:hover{
+    background-color:rgb(255, 88, 10);
+    color:rgb(31, 31, 24);
+}
+input{
+    text-transform: uppercase;
+}
+header sub{
+    font-weight: normal;
+}
+html{
+    overflow-x: hidden;
+    width:100%;
+    padding:0;
+    margin-left:0;
+    margin-right: 0;
+    background-color: rgb(94, 12, 59);
+
+}
+input[type="text"],input[type="number"],select{
+    width:80%;
+    outline:none;
+    display: block;
+    margin:auto;
+   
+    border-width:0 0 2px 0;
+}
+form{
+    width:80%;
+    margin:auto;
+}
+form>section>section{
+    margin:15px;
+}
+select option{
+    text-transform: capitalize;
+    text-align: center;
+}
+form>section{
+    background-color: white;
+    border:1px solid black;
+    box-shadow:1px 1px 2px,-1px,-1px,1px;
+    margin:10px;
+    padding:10px;
+}
+form>section>p{
+    text-transform: uppercase;
+}
+*{
+    text-transform: capitalize;
+}
+body{
+    margin:0;
+    padding:0;
+}
+#last input{
+    width:200px;
+    background-color: black;
+    color:white;
+    border-radius: 10px;
+    padding:10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#last{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+#app{
+    display: none;
+}
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity:1;
+    
+}
+body *:focus,body{
+    background-color: rgb(224, 224, 209);
+}
